@@ -2,9 +2,13 @@ library my_push;
 
 /// A Calculator.
 class MyPush {
-  int _value = 0;
+  static int _value = 0;
 
-  int addOne() => _value + 1;
+  static addOne() {
+    print('Before $_value');
+    _value += 1;
+    print('After $_value');
+  }
 
-  int get value => _value;
+  static int get value => _value;
 }
